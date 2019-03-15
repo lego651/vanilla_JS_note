@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Visa OA note taking app </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="form-container">
+        <h1>Note Taking App</h1>
+        <form>
+          <textarea name="noteContent"
+                    id="noteContent"
+                    cols="50" rows="8"
+                    maxlength="300"></textarea>
+          <div class="pick-color">
+            <div> Note Color </div>
+            <ul id="colors">
+              <li class="color selected" id="red" > </li>
+              <li class="color" id="blue"> </li>
+              <li class="color" id="green"> </li>
+              <li class="color" id="orange"> </li>
+              <li class="color" id="yellow"> </li>
+              <li class="color" id="purple"> </li>
+            </ul>
+          </div>
+          <button id="noteAddButton"> Add note </button>
+        </form>
+      </div>
+
+      <div id="notes"> </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
